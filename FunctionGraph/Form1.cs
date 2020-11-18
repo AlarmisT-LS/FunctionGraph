@@ -40,9 +40,10 @@ namespace FunctionGraph
                 flagAct++;
             if (InputErorr(labelErorr3, () => dx = double.Parse(textBox3.Text)))
                 flagAct++;
+            this.chart1.Series[0].Points.Clear();//Очищаем точки
             if (flagAct == 3)
             {
-                this.chart1.Series[0].Points.Clear();//Очищаем точки
+                
                 x = x0;
                 while (x<=xn)
                 {
